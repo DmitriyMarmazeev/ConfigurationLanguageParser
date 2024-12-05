@@ -1,0 +1,18 @@
+% Smart Home Configuration
+% base constants
+def MAX_LIGHTS = 50; % Maximum number of lights
+def TEMP_LIMIT = 23.5; % Temperature limit in Celsius
+def DEVICES = #(#(10, 11, #(20, 21)), 30, #(40, 41, #(50, 51))); % Device IDs grouped
+def ACTIVE_SENSORS = #(1, 2, 3, #(4, 5), #(6)); % Sensor IDs
+% Room-wise device allocation
+def LIGHTS1 = 12;
+def SENSORS1 = 3;
+def LIGHTS2 = 8;
+def SENSORS2 = 2;
+def LIGHTS3 = 5;
+def SENSORS3 = 1;
+% automation rules
+LightLimit = 50; % Restrict light usage
+Temperature = 23.5; % Default room temperature
+ConnectedDevices = #(#(10, 11, #(20, 21)), 30, #(40, 41, #(50, 51))); % Linked devices
+Sensors = #(1, 2, 3, #(4, 5), #(6)); % Active sensor IDs

@@ -1,0 +1,23 @@
+# Smart Home Configuration
+constants: #base constants
+  MAX_LIGHTS: 50 # Maximum number of lights
+  TEMP_LIMIT: 23.5 # Temperature limit in Celsius
+  DEVICES: [[10, 11, [20, 21]], 30, [40, 41, [50, 51]]] # Device IDs grouped
+  ACTIVE_SENSORS: [1, 2, 3, [4, 5], [6]] # Sensor IDs
+
+configuration: #automation rules
+  LightLimit: "@{MAX_LIGHTS}" # Restrict light usage
+  Temperature: "@{TEMP_LIMIT}" # Default room temperature
+  ConnectedDevices: "@{DEVICES}" # Linked devices
+  Sensors: "@{ACTIVE_SENSORS}" # Active sensor IDs
+
+rooms: # Room-wise device allocation
+  living_room:
+    LIGHTS1: 12
+    SENSORS1: 3
+  kitchen:
+    LIGHTS2: 8
+    SENSORS2: 2
+  bedroom:
+    LIGHTS3: 5
+    SENSORS3: 1

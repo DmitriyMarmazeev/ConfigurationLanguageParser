@@ -1,0 +1,13 @@
+% server settings
+def PLAYER_CAPACITY = 100.0; % Maximum players in decimal
+def WEAPON_DAMAGE = #(10.5, 20.2, #(30.8, 40.9), 50.0); % Weapon damage tiers
+def SPAWN_LOCATIONS = #(#(1.0, 2.5), #(3.3, 4.4, #(5.1, 6.6)), #(7.2, 8.8)); % Spawn locations
+def ROUND_TIME = 300.5; % Time for each round in seconds
+def TEAM_SIZES = #(5.0, 10.0, #(3.0, 7.5)); % Configured team sizes
+% Gaming Server Configuration
+% game rules
+MaxPlayers = 100.0; % Limit players
+WeaponDamage = #(10.5, 20.2, #(30.8, 40.9), 50.0); % Damage scaling
+Spawns = #(#(1.0, 2.5), #(3.3, 4.4, #(5.1, 6.6)), #(7.2, 8.8)); % Spawn locations
+TimeLimit = 300.5; % Time per round
+TeamConfiguration = #(5.0, 10.0, #(3.0, 7.5)); % Team sizes
